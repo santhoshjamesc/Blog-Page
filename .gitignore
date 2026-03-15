@@ -6,7 +6,7 @@
 
 # Temporary files or folders
 temp/
-client/
+
 
 # Node package manager files
 package-lock.json
