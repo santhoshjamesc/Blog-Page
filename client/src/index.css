@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+/* Global layout */
+
+body {
+  overflow-y: scroll;
+  background: #0F172A;
+  color: #e2e8f0;
+  font-family: Inter, sans-serif;
+}
+
+
+
+/* Navbar Tabs */
+
+.custom-tab {
+  background: #0D3B3B;
+  border: 1px solid #1F6F6F;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.35);
+  color: #cbd5f5;
+  transition: all 0.25s ease;
+}
+
+.custom-tab:hover {
+  border-color: #38BDF8;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.active-tab {
+  background: #1F6F6F;
+  border: 1px solid #38BDF8;
+  color: #ffffff;
+}
+
+
+
+/* TipTap Editor */
+
+.ProseMirror {
+  min-height: 220px;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background: #0D3B3B;
+  border: 1px solid #1F6F6F;
+  color: #e2e8f0;
+  transition: border 0.2s ease;
+}
+
+.ProseMirror:focus {
+  border-color: #38BDF8;
+}
+
+/* Editor Content */
+
+.ProseMirror h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ProseMirror ul {
+  list-style: disc;
+  margin-left: 2em;
+}
+
+.ProseMirror ol {
+  list-style: decimal;
+  margin-left: 2em;
+}
+
+.ProseMirror li {
+  margin-bottom: 0.25em;
+}
+
+
+
+/* Rendered Blog Content */
+
+.blog-content {
+  color: #e2e8f0;
+  line-height: 1.75rem;
+}
+
+/* Headings */
+
+.blog-content h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.blog-content h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: #e2e8f0;
+}
+
+.blog-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph */
+
+.blog-content p {
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+
+.blog-content ul {
+  list-style: disc;
+  padding-left: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content ol {
+  list-style: decimal;
+  padding-left: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.4rem;
+}
+
+/* Typography */
+
+.blog-content strong {
+  font-weight: 700;
+}
+
+.blog-content em {
+  font-style: italic;
+}
+
+/* Links */
+
+.blog-content a {
+  color: #38BDF8;
+  text-decoration: underline;
+}
+
+.blog-content a:hover {
+  color: #7dd3fc;
+}
+
+
+
+/* Code blocks */
+
+.blog-content pre {
+  background: #0D3B3B;
+  border: 1px solid #1F6F6F;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.blog-content code {
+  background: #0D3B3B;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+
+
+/* Scrollbar (modern look) */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F6F6F;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38BDF8;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-\[fadeIn_\.\25s_ease\] {
+  animation: fadeIn .25s ease forwards;
+}
