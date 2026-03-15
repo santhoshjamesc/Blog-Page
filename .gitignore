@@ -1,0 +1,23 @@
+# Environment configuration
+.env
+
+# Air live-reloading config
+
+
+# Temporary files or folders
+temp/
+client/
+
+# Node package manager files
+package-lock.json
+package.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+yarn.lock
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+/client/
